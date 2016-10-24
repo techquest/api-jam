@@ -62,6 +62,20 @@ Typically you will want to use eWallet API to get your custoemr's payment instru
 * Developer uses Access Token to fetch Customer's payment instruments
 * Payment Instruments can be used to generate OTP, Paycode, Get Balance etc
 
+##How do I use the Paycode API?
+Paycode API enables customer to generate a one time code and use for payment or cash withdrawal at the ATM. See steps below:
+* Request customer to sign in to QuickTeller by reqirecting to Interswitch Passport
+* Get Access Token returned by Interswitch Passport. (See documentation here)
+* Use Access Token to get Customer's Payment Instrument (Cards)
+* Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
+* Generate Paycode (See **Generate Paycode** documentation [here])
+* Process response
+
+##How do I use the Loyalty API?
+Loyalty API enables customer to know merchant locations where rewards can be eanred and what type of rewards they can earn. See steps below:
+* Get Merchant Locations. See documentation here
+* Get Reward Offers available. See documentation here
+
 ##How do I use the Payment Gateway API?
 Payment Gateway enables merchants to accept payment from their customers. See the steps below:
 * Decide what VAS service you want to provide to the customer
@@ -82,16 +96,3 @@ QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all f
 * Send your request (See **Send Transaction** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
 * Process the response from QuickTeller
 
-##How do I use the Paycode API?
-Paycode API enables customer to generate a one time code and use for payment or cash withdrawal at the ATM. See steps below:
-* Request customer to sign in to QuickTeller by reqirecting to Interswitch Passport
-* Get Access Token returned by Interswitch Passport. (See documentation here)
-* Use Access Token to get Customer's Payment Instrument (Cards)
-* Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
-* Generate Paycode (See **Generate Paycode** documentation [here])
-* Process response
-
-##How do I use the Loyalty API?
-Loyalty API enables customer to know merchant locations where rewards can be eanred and what type of rewards they can earn. See steps below:
-* Get Merchant Locations. See documentation here
-* Get Reward Offers available. See documentation here
