@@ -65,27 +65,27 @@ Typically you will want to use eWallet API to get your custoemr's payment instru
 ##How do I use the Payment Gateway API?
 Payment Gateway enables merchants to accept payment from their customers. See the steps below:
 * Decide what VAS service you want to provide to the customer
-* Get an Access Token from Interswitch
+* Get an Access Token from Interswitch (See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/request))
 * Collect Payment Instrument (Card details) from customer
-* Package your request (See documentation here)
+* Package your request (See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/request-authentication))
 * Send your request to Interswitch Payment Gateway
 * Process the response from Interswitch Payment Gateway
 
 ##How do I use the QuickTeller API?
 QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all from your Payment Instrument. See steps below:
-* Get Quickteller Bills Category (See "get category" documentation here)
-* Select a catory and get all the billers under the category (See "get biller by category" documentation here)
+* Get Quickteller Bills Category (See **Get Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/getbillercategories))
+* Select a catory and get all the billers under the category (See **Get Biller by Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/getbillers-by-category))
 * Select the biller, and request for customer details (e.g. if DSTV request for SmartCard Number, if PHCN request for Meter Number)
 * Request for amount the customer will like to pay
-* Validate customer details to ensure they are valid (See "bill inquiry" documentation here)
+* Validate customer details to ensure they are valid (See "bill inquiry" documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/bill-payment-inquiry))
 * Package your request to QuickTeller
-* Send your request (See "send transaction" documentation here)
+* Send your request (See "send transaction" documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
 * Process the response from QuickTeller
 
 ##How do I use the Paycode API?
 Paycode API enables customer to generate a one time code and use for payment or cash withdrawal at the ATM. See steps below:
 * Request customer to sign in to QuickTeller by reqirecting to Interswitch Passport
-* Get Access Token returned by Interswitch Passport. See documentation here
+* Get Access Token returned by Interswitch Passport. (See documentation here)
 * Use Access Token to get Customer's Payment Instrument (Cards)
 * Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
 * Generate Paycode (See "Generate Paycode" documentation here)
