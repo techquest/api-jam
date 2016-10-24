@@ -5,7 +5,7 @@ API Jam Demo Guide readme
 ---
 FAQ
 ----
-Q. How do I get started?
+##Q. How do I get started?
 
 A. See steps below:
 
@@ -21,7 +21,7 @@ A. See steps below:
 
 
 
-Q. How do I create Interswitch Security?
+##Q. How do I create Interswitch Security?
 
 A. See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample)
 
