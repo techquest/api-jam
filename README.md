@@ -33,7 +33,7 @@ See documentation [here] (https://confluence.interswitch.com/confluence/api/inte
 See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
 
 ##How do I create Interswitch Auth Data?
-See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
+See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/authdata). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
 	
 ##What is a Payment Instrument?
 A Payment Instrument is used to make a payment e.g. Card Number or Card PAN, Account Number, etc.
@@ -77,9 +77,9 @@ QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all f
 * Select a catory and get all the billers under the category (See **Get Biller by Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/getbillers-by-category))
 * Select the biller, and request for customer details (e.g. if DSTV request for SmartCard Number, if PHCN request for Meter Number)
 * Request for amount the customer will like to pay
-* Validate customer details to ensure they are valid (See "bill inquiry" documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/bill-payment-inquiry))
+* Validate customer details to ensure they are valid (See **Bill Inquiry** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/bill-payment-inquiry))
 * Package your request to QuickTeller
-* Send your request (See "send transaction" documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
+* Send your request (See **Send Transaction** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
 * Process the response from QuickTeller
 
 ##How do I use the Paycode API?
@@ -88,7 +88,7 @@ Paycode API enables customer to generate a one time code and use for payment or 
 * Get Access Token returned by Interswitch Passport. (See documentation here)
 * Use Access Token to get Customer's Payment Instrument (Cards)
 * Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
-* Generate Paycode (See "Generate Paycode" documentation here)
+* Generate Paycode (See **Generate Paycode** documentation [here])
 * Process response
 
 ##How do I use the Loyalty API?
