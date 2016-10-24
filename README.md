@@ -35,11 +35,11 @@ See documentation here. See sample code here.
 
 ##What APIs are available?
 
-*eWallet
-	*Loyalty
-	*Paycode
-	*Payment Gateway
-	*QuickTeller
+* eWallet
+* Loyalty
+* Paycode
+* Payment Gateway
+* QuickTeller
 
 	
 ##What is a Payment Instrument?
