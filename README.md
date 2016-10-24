@@ -4,10 +4,10 @@ API Jam Demo Guide readme
 
 ##How do I get started?
 - Register on Dev Console
-- Create an Project App
-- Enable services on the App
+- Create a new Project App. (Please use REST/SOAP Client). See documentation here
+- Enable services on the App. See documentation here
 - Copy Client ID & Secret Key
-- Read API documentation (URL for each here)
+- Read API documentation for how to integrate to each
 - Start Coding
 
 ##What APIs are available?
@@ -23,33 +23,26 @@ Each API call requires some form of authentication. Interswitch uses OAuth 2.0 f
 ##How are sensitive data (Card PAN, Card PIN, CVV, Expiry Date) sent in the API?
 In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see "Ho do I create Interswitch Secure Data" and 
  "How do I create Interswitch Auth Data" for more info.
- 
- 
+
 ##How do I create Interswitch Security?
 See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
 
 ##How do I create Interswitch Secure Data
 See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
 
-
 ##How do I create Interswitch Auth Data
 See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
 	
 ##What is a Payment Instrument?
 A Payment Instrument is used to make a payment e.g. Card Number (PAN), Account Number, etc.
 
-
 ##What is an eWallet API?
-
 eWallet API give developers to customer's Payment Instruments (Card Number, Account Number etc). It makes life easier so their customer doesnt have to enter their card number everytime they need to do transaction. The API fetches all Payment instruments for a customer. Developer can then display and Customer can select whichever they want to use for transaction
 
 
 ##What else is available in the eWallet API box?
-Developers can generate an OTP which can be used on any Interswitch Gateway (Webpay) powered website
-
-Developers can Generate Paycode
+* Developers can generate an OTP which can be used on any Interswitch Gateway (Webpay) powered website
+* Developers can Generate Paycode
 	
 	
 ##What is a Paycode?
