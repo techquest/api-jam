@@ -14,13 +14,19 @@ A. See steps below
 	Read API documentation (URL for each here)
 	Start Coding
 
+
 Q. How do I create Interswitch Security
+
 A. See documentation here (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code here (https://github.com/techquest/java-isw-api-utility-sample)
+
 	
 Q. How do I create Interswitch secure data
+
 A. See documentation here. See sample code here
 
+
 Q. How do I create Interswitch auth data
+
 A. See documentation here. See sample code here.
 
 What APIs are available?
