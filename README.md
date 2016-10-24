@@ -55,6 +55,12 @@ It allows customers to see merchant locations where they can use their cards and
 An Access Token contains validated & signed credentials of the identity of the developer. In some cases, the access token contains customer's (user's) validated identity and it can be used to access some customer's resources. It is also used to determine the resources a developer can have access to and the access level.
 
 ##How do I use the eWallet API?
+Typically you will want to use eWallet API to get your custoemr's payment instruments. The payment instruments can be used to generate OTP, generate Paycode, Get Balance.
+* Redirect your app to Interswitch Passport Page
+* Customer will enter their Interswitch (QuickTeller) Passport username & password
+* An Access Token is returned to the developer
+* Developer uses Access Token to fetch Customer's payment instruments
+* Payment Instruments can be used to generate OTP, Paycode, Get Balance etc
 
 ##How do I use the Payment Gateway API?
 Payment Gateway enables merchants to accept payment from their customers. See the steps below:
