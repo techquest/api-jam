@@ -4,8 +4,8 @@ API Jam Demo Guide readme
 
 ##How do I get started?
 - Register on Interswitch Developer Console [here] (https://developer.interswitchng.com)
-- Create a new Project App. (Please use REST/SOAP Client). See documentation here
-- Enable services on the App. See documentation here
+- Create a new Project App. (Please use REST/SOAP Client). See documentation [here] (https://confluence.interswitch.com/confluence/api/developer-console-guide/create-a-new-app)
+- Enable services on the App. See documentation [here] (https://confluence.interswitch.com/confluence/api/developer-console-guide/create-a-new-app)
 - Copy Client ID & Secret Key
 - Read API documentation for how to integrate to each
 - Start Coding
@@ -68,7 +68,7 @@ Paycode API enables customer to generate a one time code and use for payment or 
 * Get Access Token returned by Interswitch Passport. (See documentation here)
 * Use Access Token to get Customer's Payment Instrument (Cards)
 * Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
-* Generate Paycode (See **Generate Paycode** documentation [here])
+* Generate Paycode (See **Generate Paycode** documentation [here] (https://confluence.interswitch.com/confluence/api/paycode-api/generate-token))
 * Process response
 
 ##How do I use the Loyalty API?
