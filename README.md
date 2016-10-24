@@ -7,15 +7,10 @@ API Jam Demo Guide readme
 See steps below:
 
 - Register on Dev Console
-
 - Create an Project App
-
 - Enable services on the App
-
 - Copy Client ID & Secret Key
-
 - Read API documentation (URL for each here)
-
 - Start Coding
 
 
