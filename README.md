@@ -6,7 +6,8 @@ API Jam Demo Guide readme
 FAQ
 ----
 Q. How do I get started?
-A. See steps below
+
+A. See steps below:
 	Register on Dev Console
 	Create an Project App
 	Enable services on the App
@@ -15,14 +16,17 @@ A. See steps below
 	Start Coding
 
 
-Q. How do I create Interswitch Security
+
+Q. How do I create Interswitch Security?
 
 A. See documentation here (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code here (https://github.com/techquest/java-isw-api-utility-sample)
+
 
 	
 Q. How do I create Interswitch secure data
 
 A. See documentation here. See sample code here
+
 
 
 Q. How do I create Interswitch auth data
