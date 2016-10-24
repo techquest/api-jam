@@ -87,5 +87,5 @@ Paycode API enables customer to generate a one time code and use for payment or 
 
 ##How do I use the Loyalty API?
 Loyalty API enables customer to know merchant locations where rewards can be eanred and what type of rewards they can earn. See steps below:
-* Get Merchant Locations
-* Get Reward Offers available
+* Get Merchant Locations. See documentation here
+* Get Reward Offers available. See documentation here
