@@ -58,34 +58,34 @@ An Access Token contains validated & signed credentials of the identity of the d
 
 ##How do I use the Payment Gateway API?
 Payment Gateway enables merchants to accept payment from their customers. See the steps below:
-	* Decide what VAS service you want to provide to the customer
-	* Get an Access Token from Interswitch
-	* Collect Payment Instrument (Card details) from customer
-	* Package your request (See documentation here)
-	* Send your request to Interswitch Payment Gateway
-	* Process the response from Interswitch Payment Gateway
+* Decide what VAS service you want to provide to the customer
+* Get an Access Token from Interswitch
+* Collect Payment Instrument (Card details) from customer
+* Package your request (See documentation here)
+* Send your request to Interswitch Payment Gateway
+* Process the response from Interswitch Payment Gateway
 
 ##How do I use the QuickTeller API?
 QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all from your Payment Instrument. See steps below:
-	* Get Quickteller Bills Category (See "get category" documentation here)
-	* Select a catory and get all the billers under the category (See "get biller by category" documentation here)
-	* Select the biller, and request for customer details (e.g. if DSTV request for SmartCard Number, if PHCN request for Meter Number)
-	* Request for amount the customer will like to pay
-	* Validate customer details to ensure they are valid (See "bill inquiry" documentation here)
-	* Package your request to QuickTeller
-	* Send your request (See "send transaction" documentation here)
-	* Process the response from QuickTeller
+* Get Quickteller Bills Category (See "get category" documentation here)
+* Select a catory and get all the billers under the category (See "get biller by category" documentation here)
+* Select the biller, and request for customer details (e.g. if DSTV request for SmartCard Number, if PHCN request for Meter Number)
+* Request for amount the customer will like to pay
+* Validate customer details to ensure they are valid (See "bill inquiry" documentation here)
+* Package your request to QuickTeller
+* Send your request (See "send transaction" documentation here)
+* Process the response from QuickTeller
 
 ##How do I use the Paycode API?
 Paycode API enables customer to generate a one time code and use for payment or cash withdrawal at the ATM. See steps below:
-	* Request customer to sign in to QuickTeller by reqirecting to Interswitch Passport
-	* Get Access Token returned by Interswitch Passport. See documentation here
-	* Use Access Token to get Customer's Payment Instrument (Cards)
-	* Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
-	* Generate Paycode (See "Generate Paycode" documentation here)
-	* Process response
+* Request customer to sign in to QuickTeller by reqirecting to Interswitch Passport
+* Get Access Token returned by Interswitch Passport. See documentation here
+* Use Access Token to get Customer's Payment Instrument (Cards)
+* Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
+* Generate Paycode (See "Generate Paycode" documentation here)
+* Process response
 
 ##How do I use the Loyalty API?
 Loyalty API enables customer to know merchant locations where rewards can be eanred and what type of rewards they can earn. See steps below:
-	* Get Merchant Locations
-	* Get Reward Offers available
+* Get Merchant Locations
+* Get Reward Offers available
