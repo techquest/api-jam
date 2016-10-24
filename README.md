@@ -33,17 +33,27 @@ Q. How do I create Interswitch auth data
 
 A. See documentation here. See sample code here.
 
-What APIs are available?
-	eWallet
-	Loyalty
-	Paycode
-	Payment Gateway
-	QuickTeller
+
+
+Q. What APIs are available?
+
+A.	*eWallet
+	*Loyalty
+	*Paycode
+	*Payment Gateway
+	*QuickTeller
+
 	
-What is a Payment Instrument?
-	A Payment Instrument is used to make a payment e.g. Card Number (PAN), Account Number, etc.
-What is an eWallet API
-	eWallet API give developers to customer's Payment Instruments (Card Number, Account Number etc). It makes life easier so their customer doesnt have to enter their card number everytime they need to do transaction. The API fetches all Payment instruments for a customer. Developer can then display and Customer can select whichever they want to use for transaction
+Q. What is a Payment Instrument?
+
+A. A Payment Instrument is used to make a payment e.g. Card Number (PAN), Account Number, etc.
+
+
+Q. What is an eWallet API
+
+A. eWallet API give developers to customer's Payment Instruments (Card Number, Account Number etc). It makes life easier so their customer doesnt have to enter their card number everytime they need to do transaction. The API fetches all Payment instruments for a customer. Developer can then display and Customer can select whichever they want to use for transaction
+
+
 What else is available in the eWallet API box	
 	Developers can generate an OTP which can be used on any Interswitch Gateway (Webpay) powered website
 	Developers can Generate Paycode
