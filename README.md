@@ -3,7 +3,6 @@ API Jam Demo Guide readme
 -------------------------
 
 ##How do I get started?
-
 - Register on Dev Console
 - Create an Project App
 - Enable services on the App
@@ -12,30 +11,33 @@ API Jam Demo Guide readme
 - Start Coding
 
 ##What APIs are available?
-
 * eWallet
 * Loyalty
 * Paycode
 * Payment Gateway
 * QuickTeller
 
+##How do I access these APIs?
+Each API call requires some form of authentication. Interswitch uses OAuth 2.0 for some of its APIs and a custom Interswitch Security called InterswitchAuth (An modification of the OAuth 2 framework)
+
+##How are sensitive data (Card PAN, Card PIN, CVV, Expiry Date) sent in the API?
+In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see "Ho do I create Interswitch Secure Data" and 
+ "How do I create Interswitch Auth Data" for more info.
+ 
+ 
 ##How do I create Interswitch Security?
-
-See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample)
-
-
-##How do I create Interswitch secure data
-
-See documentation here. See sample code here
+See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
 
 
-##How do I create Interswitch auth data
+##How do I create Interswitch Secure Data
+See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
 
-See documentation here. See sample code here.
+
+##How do I create Interswitch Auth Data
+See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
 
 	
 ##What is a Payment Instrument?
-
 A Payment Instrument is used to make a payment e.g. Card Number (PAN), Account Number, etc.
 
 
