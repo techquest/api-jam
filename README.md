@@ -21,7 +21,7 @@ API Jam Demo Guide readme
 * QuickTeller
 
 ##How do I access these APIs?
-Each API call requires authentication. Interswitch uses **_OAuth 2.0_** for some of its APIs.
+Each API call requires authentication. Interswitch uses **_OAuth 2.0_** for APIs.
 
 ##How are sensitive data (Card PAN - Payment Instrument, Card PIN, CVV, Expiry Date) sent in the API?
 In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **_Ho do I create Interswitch Secure Data_** and **_How do I create Interswitch Auth Data_** for more info.
