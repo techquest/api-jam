@@ -18,10 +18,10 @@ API Jam Demo Guide readme
 * QuickTeller
 
 ##How do I access these APIs?
-Each API call requires some form of authentication. Interswitch uses **OAuth 2.0** for some of its APIs and a custom Interswitch Security called **InterswitchAuth** (An modification of the OAuth 2 framework)
+Each API call requires some form of authentication. Interswitch uses **_OAuth 2.0_** for some of its APIs and a custom Interswitch Security called **_InterswitchAuth_** (An modification of the OAuth 2 framework)
 
 ##How are sensitive data (Card PAN, Card PIN, CVV, Expiry Date) sent in the API?
-In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **Ho do I create Interswitch Secure Data** and **How do I create Interswitch Auth Data** for more info.
+In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **_Ho do I create Interswitch Secure Data_** and **_How do I create Interswitch Auth Data_** for more info.
 
 ##How do I create Interswitch Security?
 See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
