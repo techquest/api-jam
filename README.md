@@ -100,24 +100,8 @@ QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all f
 * Get User Access Token (Redirect) SDK. ([PHP] (), [JavaScript] ())
 * Get Client Access Token SDK ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
 * Interswitch API Security Headers SDK
-  * Bearer
-    * [Java] ()
-    * [C#] ()
-    * [PHP] ()
-    * [JavaScript] ()
-  * Interswitch Auth
-    * [Java] ()
-    * [C#] ()
-    * [PHP] ()
-    * [JavaScript] ()
+  * Bearer ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
+  * Interswitch Auth ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
 * Sensitive Payment Data (Payment Card, PIN, CVV, ExpDate) SDK
-  * PinBlock and Secure Data
-    * [Java] ()
-    * [C#] ()
-    * [PHP] ()
-    * [JavaScript] ()
-  * AuthData
-    * [Java] ()
-    * [C#] ()
-    * [PHP] ()
-    * [JavaScript] ()
+  * PinBlock and Secure Data ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
+  * AuthData ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
