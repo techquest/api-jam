@@ -96,3 +96,18 @@ QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all f
 * Send your request (See **Send Transaction** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
 * Process the response from QuickTeller
 
+##What SDKs do I need?
+* Get User Access Token (Redirect) SDK
+* Get Client Access Token SDK
+* Interswitch API Security Headers SDK
+  * Bearer
+  * Interswitch Auth
+* Sensitive Payment Data (Payment Card, PIN, CVV, ExpDate) SDK
+  * PinBlock and Secure Data
+  * AuthData
+
+##What Platforms do our SDKs support?
+* [Java] ()
+* [C#] ()
+* [PHP] ()
+* [JavaScript] ()
