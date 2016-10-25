@@ -39,7 +39,7 @@ Some Interswitch API requires sensitive data to be encrypted in a certain way. I
 The documentation for each API specifies which to use.
 
 ##What is the difference between User Access Token and Client Access Token?
-A User Access Token is a signed authorization token that grants Developer (Client) access to their customer's resources. The resources are owned by the user but stored by the service provider (Interswitch). Client Access Token on the other hand is a signed authorization token that grants Developer access to service provider's resources.
+A User Access Token is a signed authorization token that grants Developer (Client) access to their customer's resources (e.g. Customer's Payment Instruments). The resources are owned by the user but stored by the service provider (Interswitch). Client Access Token on the other hand is a signed authorization token that grants Developer access to service provider's resources (e.g. Payment Gateway, QuickTeller VAS API etc).
 
 ##What does User Access Token (Redirect) SDK do?
 Developer calls SDK to get User Access Token. The SDK redirects to Interswitch Passport portal where customer signs in and returns an Access Token to the developer. Note that this SDK will redirect your App to a new web page.
