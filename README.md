@@ -49,7 +49,7 @@ Developer calls SDK to get Client Access Token. SDK makes an API call to Intersw
 
 ##What SDKs do I need?
 * Access Token SDK
-  * User Access Token (Redirect). ([PHP] (), [JavaScript] ())
+  * User Access Token (Redirect). ([PHP] (), [JavaScript] (), [Android] (), [IOS] ())
   * Client Access Token ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
 * Interswitch API Security Headers SDK
   * Bearer ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
