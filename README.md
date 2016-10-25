@@ -30,7 +30,7 @@ In order to access Interswitch API, developers will have to send a couple of HTT
 A User Access Token is a signed authorization token that grants Developer (Client) access to their customer's resources (e.g. Customer's Payment Instruments). The resources are owned by the user but stored by the service provider (Interswitch). Client Access Token on the other hand is a signed authorization token that grants Developer access to service provider's resources (e.g. Payment Gateway, QuickTeller VAS API etc).
 
 ##What does User Access Token (Redirect) SDK do?
-Developer calls SDK to get User Access Token. The SDK redirects to Interswitch Passport portal where customer signs in. The SDK returns an Access Token to the developer. Note that this SDK will redirect your App to a new web page.
+Developer calls SDK to get User Access Token. The SDK redirects to Interswitch Passport portal where customer signs in with their QuickTeller login credentials. The SDK returns an Access Token to the developer. Note that this SDK will redirect your App to a new web page.
 
 ##What does Client Access Token SDK do?
 Developer calls SDK to get Client Access Token. SDK makes an API call to Interswitch Passport and returns an Access Token to the developer. Note, there is no redirect required.
