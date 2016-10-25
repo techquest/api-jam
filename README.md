@@ -23,20 +23,8 @@ API Jam Demo Guide readme
 ##How do I access these APIs?
 Each API call requires authentication. Interswitch uses **_OAuth 2.0_** for APIs.
 
-##How are sensitive data (Card PAN - Payment Instrument, Card PIN, CVV, Expiry Date) sent in the API?
-In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **_Ho do I create Interswitch Secure Data_** and **_How do I create Interswitch Auth Data_** for more info.
-
 ##How do I create Interswitch Security?
 In order to access Interswitch API, developers will have to send a couple of HTTP headers along with their request. See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
-##How do I create Interswitch Secure Data?
-Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Secure Data SDK will do this for you. See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
-##How do I create Interswitch Auth Data?
-Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Auth Data SDK will do this for you. See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/authdata). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
-##When do I use Secure Data and Auth Data?
-The documentation for each API specifies which to use.
 
 ##What is the difference between User Access Token and Client Access Token?
 A User Access Token is a signed authorization token that grants Developer (Client) access to their customer's resources (e.g. Customer's Payment Instruments). The resources are owned by the user but stored by the service provider (Interswitch). Client Access Token on the other hand is a signed authorization token that grants Developer access to service provider's resources (e.g. Payment Gateway, QuickTeller VAS API etc).
@@ -47,9 +35,21 @@ Developer calls SDK to get User Access Token. The SDK redirects to Interswitch P
 ##What does Client Access Token SDK do?
 Developer calls SDK to get Client Access Token. SDK makes an API call to Interswitch Passport and returns an Access Token to the developer. Note, there is no redirect required.
 
+##How are sensitive data (Payment Instrument e.g Card PAN, Card PIN, CVV, Expiry Date) sent in the API?
+In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **_Ho do I create Interswitch Secure Data_** and **_How do I create Interswitch Auth Data_** for more info.
+
+##How do I create Interswitch Secure Data?
+Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Secure Data SDK will do this for you. See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
+
+##How do I create Interswitch Auth Data?
+Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Auth Data SDK will do this for you. See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/authdata). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
+
+##When do I use Secure Data and Auth Data?
+The documentation for each API specifies which to use.
+
 ##What SDKs do I need?
 * Access Token SDK
-  * User Access Token (Redirect). ([PHP] (), [JavaScript] (), [Android] (), [IOS] ())
+  * User Access Token (Redirect). ([PHP] (), [JavaScript] ())
   * Client Access Token ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
 * Interswitch API Security Headers SDK
   * Bearer ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
