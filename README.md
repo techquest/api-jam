@@ -97,17 +97,8 @@ QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all f
 * Process the response from QuickTeller
 
 ##What SDKs do I need?
-* Get User Access Token (Redirect) SDK.
-  * [Java] ()
-  * [C#] ()
-  * [PHP] ()
-  * [JavaScript] ()
-
-* Get Client Access Token SDK
-  * [Java] ()
-  * [C#] ()
-  * [PHP] ()
-  * [JavaScript] ()
+* Get User Access Token (Redirect) SDK. ([PHP] (), [JavaScript] ())
+* Get Client Access Token SDK ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
 * Interswitch API Security Headers SDK
   * Bearer
     * [Java] ()
