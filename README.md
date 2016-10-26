@@ -52,12 +52,12 @@ The interswitch SDK is available in github and quite a number of programming lan
 ```
 Check out the [Javascript source and sample codes on GitHub.] (https://github.com/techquest/interswitch_javascript)
 
-* Install via Node npm
+* Integrate with Node npm
 ```
-npm isntall interswitch
+npm install interswitch
 ```
 
-* Integrate with PHP. The PHP library is installed via Composer. Add interswitch/interswitch-php to your composer.json file.
+* Integrate with PHP Composer. Add interswitch/interswitch-php to your composer.json file.
 ```
 {
   "require": {
@@ -68,7 +68,7 @@ npm isntall interswitch
 Check out the [PHP source and sample codes on GitHub.] (https://github.com/techquest/interswitch_php)
 
 
-* Integrate with Ruby. Available as a gem. 
+* Integrate with Ruby gem. 
 ```
  gem install interswitch
 ```
@@ -79,7 +79,7 @@ gem 'interswitch', :git => 'https://github.com/techquest/interswitch_ruby'
 Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
   
 
-* Integrate with Java. Download via Maven. Add the following dependency to your POM.
+* Integrate with Java Maven. Add the following dependency to your POM.
 ```
 <dependency>
   <groupId>com.interswitchng.techquest</groupId>
@@ -89,7 +89,7 @@ Check out the [Ruby source and sample codes on GitHub.] (https://github.com/tech
 ```
 Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
 
-* Integrate with C#. Available as a Nuget package. Download via Nuget. 
+* Integrate with C# Nuget. 
 ```
 Install-Package Interswitch
 ```
