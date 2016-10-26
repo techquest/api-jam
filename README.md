@@ -11,8 +11,8 @@ API Jam Demo Guide readme
 - Start Coding
 
 ##I want to accept payment with Interswitch Payment Gateway, how do I get started?
-- Register on merchantX sandbox [here] (https://www.interswitchgroup.com/paymentgateway). If you have an existing profile on Developer console, you can use the same email address to register.
-- Click Developer Console link after successful log in
+- Register on the Payment Gateway portal [here] (https://www.interswitchgroup.com/paymentgateway). If you have an existing profile on Developer Console, use the same email address to register.
+- Click the Developer Console link on the Payment Gateway portal after successful log in
 - Copy Client ID & Secret Key
 - Read API documentation for how to integrate to Payment Gateway
 - Start Coding
