@@ -50,46 +50,46 @@ The interswitch SDK is available in github and quite a number of programming lan
 * [JavaScript] (https://github.com/techquest/interswitch_javascript)
 ```
 ```
+
 * [PHP] (https://github.com/techquest/interswitch_php)
-```
 The PHP library is installed via Composer. Add interswitch/interswitch-php to your composer.json file:
 composer.json
+```
 {
   "require": {
     "interswitch/interswitch-php": "1.*"
   }
 }
+```
 Alternatively, you can download the source directly.
 Check out the [PHP source and sample codes on GitHub.] (https://github.com/techquest/interswitch_php)
-```
+
 * [Ruby] (https://github.com/techquest/interswitch_ruby)
-```
-Available as a gem:
-gem install interswitch
+Available as a gem: gem install interswitch
 If you use bundler, you can use this line:
 Gemfile
+```
 gem 'interswitch', :git => 'https://github.com/techquest/interswitch_ruby'
+```
 Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
-```
+
 * [Java] (https://github.com/techquest/interswitch_java)
-```
-Available in Maven repository
 Download via Maven. Add the following dependency to your POM:
-pom.xml
+```
 <dependency>
   <groupId>com.interswitchng.techquest</groupId>
   <artifactId>interswitch-java</artifactId>
   <version>1.0.0</version>
 </dependency>
+```
 You can download the Interswitch JAR from our github release page
 Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
-```
+
 * [C#] (https://github.com/techquest/interswitch_csharp)
-```
 Available as a Nuget package. Download via Nuget.
 Install-Package Interswitch
 Check out the [C# source and sample codes on GitHub.] (https://github.com/techquest/interswitch_csharp)
-```
+
 
 ##How do I use the SDKs?
 * Initialize
