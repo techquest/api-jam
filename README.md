@@ -65,14 +65,18 @@ composer.json
 
 
 * [Ruby] (https://github.com/techquest/interswitch_ruby)
-  * Available as a gem: gem install interswitch. If you use bundler, you can use this line:
+  * Available as a gem. Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
+```
+ gem install interswitch
+```
+* If you use bundler, you can use this line. 
 ```
 gem 'interswitch', :git => 'https://github.com/techquest/interswitch_ruby'
 ```
-  * Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
+  
 
 * [Java] (https://github.com/techquest/interswitch_java)
-  * Download via Maven. Add the following dependency to your POM:
+  * Download via Maven. Add the following dependency to your POM. Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
 ```
 <dependency>
   <groupId>com.interswitchng.techquest</groupId>
@@ -80,14 +84,13 @@ gem 'interswitch', :git => 'https://github.com/techquest/interswitch_ruby'
   <version>1.0.0</version>
 </dependency>
 ```
-  * Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
+  
 
 * [C#] (https://github.com/techquest/interswitch_csharp)
-  * Available as a Nuget package. Download via Nuget.
+  * Available as a Nuget package. Download via Nuget. Check out the [C# source and sample codes on GitHub.] (https://github.com/techquest/interswitch_csharp)
 ```
 Install-Package Interswitch
 ```
-  * Check out the [C# source and sample codes on GitHub.] (https://github.com/techquest/interswitch_csharp)
 
 
 ##How do I use the SDKs?
