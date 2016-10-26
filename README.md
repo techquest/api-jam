@@ -74,7 +74,7 @@ eWallet API give developers to customer's Payment Instruments (Card Number, Acco
 * Developers can generate an OTP which can be used on any Interswitch Gateway (Webpay) powered website
 * Developers can Generate Paycode
 	
-##What is a Paycode API?
+##What is a Paycode?
 A Paycode is a one time token generated for making payment, or getting cash at the ATM. The use case can be limitless. It can be generated becuase Customer forgot or lost his/her wallet. The Customer can generate Paycode from his mobile phone and use it to get cash at the ATM. He can also decide to use same Paycode to make payment at a merchant location. There is also an option of generating bulk Paycodes in order to use it for disbursing payment to a large number of people.
 
 ##What is QuickTeller API?
@@ -96,8 +96,8 @@ Typically you will want to use eWallet API to get your custoemr's payment instru
 
 ##How do I use the Paycode API?
 Paycode API enables customer to generate a one time code and use for payment or cash withdrawal at the ATM. See steps below:
-* Request customer to sign in to QuickTeller by reqirecting to Interswitch Passport
-* Get Access Token returned by Interswitch Passport. (See documentation here)
+* Request customer to sign in to QuickTeller by reqirecting to Interswitch Authentication Server (Interswitch Passport).
+* Get Access Token returned by Interswitch Passport. You can use any OAuth client of your choice. 
 * Use Access Token to get Customer's Payment Instrument (Cards)
 * Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
 * Generate Paycode (See **Generate Paycode** documentation [here] (https://confluence.interswitch.com/confluence/api/paycode-api/generate-token))
