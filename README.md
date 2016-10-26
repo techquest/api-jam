@@ -10,8 +10,15 @@ API Jam Demo Guide readme
 - Read API documentation for how to integrate to each
 - Start Coding
 
+##I want to accept payment with Interswitch Payment Gateway, how do I get started?
+- Register on merchantX sandbox [here] (https://www.interswitchgroup.com/paymentgateway). If you have an existing profile on Developer console, you can use the same email address to register.
+- Click Developer Console link after successful log in
+- Copy Client ID & Secret Key
+- Read API documentation for how to integrate to Payment Gateway
+- Start Coding
+
 ##What is the URL of Interswitch Developer Console
-	https://developer.interswitchng.com
+https://developer.interswitchng.com
 	
 ##What APIs are available?
 * eWallet
@@ -30,26 +37,14 @@ In order to access Interswitch API, developers will have to send a couple of HTT
 A User Access Token is a signed authorization token that grants Developer (Client) access to their customer's resources (e.g. Customer's Payment Instruments). The resources are owned by the user but stored by the service provider (Interswitch). Client Access Token on the other hand is a signed authorization token that grants Developer access to service provider's resources (e.g. Payment Gateway, QuickTeller VAS API etc).
 
 ##What does User Access Token (Redirect) SDK do?
-Developer calls SDK to get User Access Token. The SDK redirects to Interswitch Passport portal where customer signs in with their **QuickTeller** login credentials. The SDK returns an Access Token to the developer. Note that this SDK will redirect your App to a new web page.
+Developer calls SDK to get User Access Token. The SDK redirects to **Interswitch Passport** portal where customer signs in with their **QuickTeller** login credentials. The SDK returns an Access Token to the developer. Note that this SDK will redirect your App to a new web page.
 
 ##What does Client Access Token SDK do?
-Developer calls SDK to get Client Access Token. SDK makes an API call to Interswitch Passport and returns an Access Token to the developer. Note, there is no redirect required.
-
-##How are sensitive data (Payment Instrument e.g Card PAN, Card PIN, CVV, Expiry Date) sent in the API?
-In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **_Ho do I create Interswitch Secure Data_** and **_How do I create Interswitch Auth Data_** for more info.
-
-##How do I create Interswitch Secure Data?
-Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Secure Data SDK will do this for you. See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
-##How do I create Interswitch Auth Data?
-Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Auth Data SDK will do this for you. See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/authdata). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
-##When do I use Secure Data and Auth Data?
-The documentation for each API specifies which to use.
+Developer calls SDK to get Client Access Token. SDK makes an API call to **Interswitch Passport** and returns an Access Token to the developer. Note, there is no redirect required. This is the default Access Token used when the Interswitch.send() function is called in the SDK.
 
 ##What SDKs do I need?
 * Access Token SDK
-  * User Access Token (Redirect). ([PHP] (), [JavaScript] ())
+  * User Access Token (Redirect). ([JavaScript] ())
   * Client Access Token ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
 * Interswitch API Security Headers SDK
   * Bearer ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
@@ -57,6 +52,13 @@ The documentation for each API specifies which to use.
 * Sensitive Payment Data (Payment Card, PIN, CVV, ExpDate) SDK
   * PinBlock and Secure Data ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
   * AuthData ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
+
+##How do I use the SDKs?
+* Initialize
+  * Interswitch interswitch = new Interswitch(String clientId, String secretkey, Interswitch.ENV_SANDBOX);
+* Send request
+  * HashMap response = interswitch.send(String uri, String httpMethod, String data);
+  * See documentation for URI for each service e.g. api/v1/quickteller/categories
 
 ##What is a Payment Instrument?
 A Payment Instrument is used to make a payment e.g. Card Number or Card PAN, Account Number, etc.
@@ -118,3 +120,15 @@ QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all f
 * Package your request to QuickTeller
 * Send your request (See **Send Transaction** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
 * Process the response from QuickTeller
+
+##How are sensitive data (Payment Instrument e.g Card PAN, Card PIN, CVV, Expiry Date) sent in the API?
+In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **_Ho do I create Interswitch Secure Data_** and **_How do I create Interswitch Auth Data_** for more info.
+
+##When do I use Secure Data and Auth Data?
+The documentation for each API specifies which to use.
+
+##How do I create Interswitch Secure Data?
+Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Secure Data SDK will do this for you. See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
+
+##How do I create Interswitch Auth Data?
+Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Auth Data SDK will do this for you. See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/authdata). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
