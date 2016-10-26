@@ -74,14 +74,17 @@ eWallet API give developers to customer's Payment Instruments (Card Number, Acco
 * Developers can generate an OTP which can be used on any Interswitch Gateway (Webpay) powered website
 * Developers can Generate Paycode
 	
-##What is a Paycode?
+##What is a Paycode API?
 A Paycode is a one time token generated for making payment, or getting cash at the ATM. The use case can be limitless. It can be generated becuase Customer forgot or lost his/her wallet. The Customer can generate Paycode from his mobile phone and use it to get cash at the ATM. He can also decide to use same Paycode to make payment at a merchant location. There is also an option of generating bulk Paycodes in order to use it for disbursing payment to a large number of people.
-	
+
+##What is QuickTeller API?
+QuickTeller is a VAS platform that enables customer to pay for their bills. Developer can tap into the vast database of billers already registered on the platform and can facilitate transactions while earning a certain part from the transaction fee.
+
+##What is Payment Gateway API?
+Interswitch Payment Gateway enables merchant to accept payment into their bank account. You can sell items directly to your customer and ask for payment in all the payment card available, both local and international.
+
 ##What is Reward/Loyalty API?
 It allows customers to see merchant locations where they can use their cards and get discounts. Customers can also see what offers they can enjoy.
-	
-##What is an Access Token and why do I need it?
-An Access Token contains validated & signed credentials of the identity of the developer. In some cases, the access token contains customer's (user's) validated identity and it can be used to access some customer's resources. It is also used to determine the resources a developer can have access to and the access level.
 
 ##How do I use the eWallet API?
 Typically you will want to use eWallet API to get your custoemr's payment instruments. The payment instruments can be used to generate OTP, generate Paycode, Get Balance.
@@ -89,7 +92,7 @@ Typically you will want to use eWallet API to get your custoemr's payment instru
 * Customer will enter their Interswitch (QuickTeller) Passport username & password
 * An Access Token is returned to the developer
 * Developer uses Access Token to fetch Customer's payment instruments
-* Payment Instruments can be used to generate OTP, Paycode, Get Balance etc
+* Payment Instruments can be used to generate OTP, Paycode, Get Balance, Do Recharge etc
 
 ##How do I use the Paycode API?
 Paycode API enables customer to generate a one time code and use for payment or cash withdrawal at the ATM. See steps below:
@@ -114,7 +117,7 @@ Payment Gateway enables merchants to accept payment from their customers. See th
 * Send your request to Interswitch Payment Gateway
 * Process the response from Interswitch Payment Gateway
 
-##How do I use the QuickTeller API?
+##How do I use the QuickTeller Bill Payment API?
 QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all from your Payment Instrument. See steps below:
 * Get Quickteller Bills Category (See **Get Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/getbillercategories))
 * Select a catory and get all the billers under the category (See **Get Biller by Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/getbillers-by-category))
@@ -124,26 +127,3 @@ QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all f
 * Package your request to QuickTeller
 * Send your request (See **Send Transaction** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
 * Process the response from QuickTeller
-
-
-
-##What does User Access Token (Redirect) SDK do?
-Developer calls SDK to get User Access Token. The SDK redirects to **Interswitch Passport** portal where customer signs in with their **QuickTeller** login credentials. The SDK returns an Access Token to the developer. Note that this SDK will redirect your App to a new web page.
-
-##What does Client Access Token SDK do?
-Developer calls SDK to get Client Access Token. SDK makes an API call to **Interswitch Passport** and returns an Access Token to the developer. Note, there is no redirect required. This is the default Access Token used when the Interswitch.send() function is called in the SDK.
-
-##How are sensitive data (Payment Instrument e.g Card PAN, Card PIN, CVV, Expiry Date) sent in the API?
-In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **_Ho do I create Interswitch Secure Data_** and **_How do I create Interswitch Auth Data_** for more info.
-
-##When do I use Secure Data and Auth Data?
-The documentation for each API specifies which to use.
-
-##How do I create Interswitch Secure Data?
-Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Secure Data SDK will do this for you. See documentation here. See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
-##How do I create Interswitch Auth Data?
-Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Auth Data SDK will do this for you. See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/authdata). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
-
-##How do I create Interswitch Security?
-In order to access Interswitch API, developers will have to send a couple of HTTP headers along with their request. These headers are used for client authentication. See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
