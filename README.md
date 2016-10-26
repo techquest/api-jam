@@ -45,9 +45,8 @@ https://saturn.interswitchng.com/passport/oauth/authorize?response_type=token&cl
 ##What is the difference between User Access Token and Client Access Token?
 A User Access Token is a signed authorization token that grants Developer (Client) access to their customer's resources (e.g. Customer's Payment Instruments). The resources are owned by the user but stored by the service provider (Interswitch). Client Access Token on the other hand is a signed authorization token that grants Developer access to service provider's resources (e.g. Payment Gateway, QuickTeller VAS API etc).
 
-##What SDKs do I need?
-The interswitch SDK is available in github and quite a number of programming languages are supported: 
-* Integrate with JavaScript
+##What SDKs are available?
+* **Integrate with JavaScript**
 ```
 ```
 Check out the [Javascript source and sample codes on GitHub.] (https://github.com/techquest/interswitch_javascript)
