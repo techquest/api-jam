@@ -52,8 +52,7 @@ The interswitch SDK is available in github and quite a number of programming lan
 ```
 
 * [PHP] (https://github.com/techquest/interswitch_php)
-
-The PHP library is installed via Composer. Add interswitch/interswitch-php to your composer.json file. Check out the [PHP source and sample codes on GitHub.] (https://github.com/techquest/interswitch_php)
+The PHP library is installed via Composer. Add interswitch/interswitch-php to your composer.json file. (https://github.com/techquest/interswitch_php)
 ```
 {
   "require": {
@@ -61,11 +60,11 @@ The PHP library is installed via Composer. Add interswitch/interswitch-php to yo
   }
 }
 ```
+Check out the [PHP source and sample codes on GitHub.]
 
 
 * [Ruby] (https://github.com/techquest/interswitch_ruby)
-
-Available as a gem. Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
+Available as a gem. 
 ```
  gem install interswitch
 ```
@@ -73,6 +72,7 @@ If you use bundler, you can use this line.
 ```
 gem 'interswitch', :git => 'https://github.com/techquest/interswitch_ruby'
 ```
+Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
   
 
 * [Java] (https://github.com/techquest/interswitch_java)
