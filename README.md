@@ -46,7 +46,12 @@ https://saturn.interswitchng.com/passport/oauth/authorize?response_type=token&cl
 A User Access Token is a signed authorization token that grants Developer (Client) access to their customer's resources (e.g. Customer's Payment Instruments). The resources are owned by the user but stored by the service provider (Interswitch). Client Access Token on the other hand is a signed authorization token that grants Developer access to service provider's resources (e.g. Payment Gateway, QuickTeller VAS API etc).
 
 ##What SDKs do I need?
-The interswitch SDK is available in github and quite a number of programming languages are supported. [Java] (https://github.com/techquest/interswitch_java), [C#] (https://github.com/techquest/interswitch_csharp), [PHP] (https://github.com/techquest/interswitch_php), [JavaScript] (https://github.com/techquest/interswitch_javascript), [Ruby] (https://github.com/techquest/interswitch_ruby)
+The interswitch SDK is available in github and quite a number of programming languages are supported: 
+* [JavaScript] (https://github.com/techquest/interswitch_javascript)
+* [PHP] (https://github.com/techquest/interswitch_php)
+* [Ruby] (https://github.com/techquest/interswitch_ruby)
+* [Java] (https://github.com/techquest/interswitch_java)
+* [C#] (https://github.com/techquest/interswitch_csharp)
 
 ##How do I use the SDKs?
 * Initialize
