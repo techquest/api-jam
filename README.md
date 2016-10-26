@@ -52,8 +52,7 @@ The interswitch SDK is available in github and quite a number of programming lan
 ```
 
 * [PHP] (https://github.com/techquest/interswitch_php)
-
-The PHP library is installed via Composer. Add interswitch/interswitch-php to your composer.json file:
+  * The PHP library is installed via Composer. Add interswitch/interswitch-php to your composer.json file:
 composer.json
 ```
 {
@@ -62,23 +61,18 @@ composer.json
   }
 }
 ```
-Alternatively, you can download the source directly.
-Check out the [PHP source and sample codes on GitHub.] (https://github.com/techquest/interswitch_php)
+  * Check out the [PHP source and sample codes on GitHub.] (https://github.com/techquest/interswitch_php)
 
 
 * [Ruby] (https://github.com/techquest/interswitch_ruby)
-
-Available as a gem: gem install interswitch
-If you use bundler, you can use this line:
-Gemfile
+  * Available as a gem: gem install interswitch. If you use bundler, you can use this line:
 ```
 gem 'interswitch', :git => 'https://github.com/techquest/interswitch_ruby'
 ```
-Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
+  * Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
 
 * [Java] (https://github.com/techquest/interswitch_java)
-
-Download via Maven. Add the following dependency to your POM:
+  * Download via Maven. Add the following dependency to your POM:
 ```
 <dependency>
   <groupId>com.interswitchng.techquest</groupId>
@@ -86,14 +80,14 @@ Download via Maven. Add the following dependency to your POM:
   <version>1.0.0</version>
 </dependency>
 ```
-You can download the Interswitch JAR from our github release page
-Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
+  * Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
 
 * [C#] (https://github.com/techquest/interswitch_csharp)
-
-Available as a Nuget package. Download via Nuget.
+  * Available as a Nuget package. Download via Nuget.
+```
 Install-Package Interswitch
-Check out the [C# source and sample codes on GitHub.] (https://github.com/techquest/interswitch_csharp)
+```
+  * Check out the [C# source and sample codes on GitHub.] (https://github.com/techquest/interswitch_csharp)
 
 
 ##How do I use the SDKs?
