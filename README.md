@@ -47,12 +47,17 @@ A User Access Token is a signed authorization token that grants Developer (Clien
 
 ##What SDKs do I need?
 The interswitch SDK is available in github and quite a number of programming languages are supported: 
-* [JavaScript] (https://github.com/techquest/interswitch_javascript)
+* Integrate with JavaScript
 ```
+```
+Check out the [Javascript source and sample codes on GitHub.] (https://github.com/techquest/interswitch_javascript)
+
+* Install via Node npm
+```
+npm isntall interswitch
 ```
 
-* [PHP] (https://github.com/techquest/interswitch_php)
-The PHP library is installed via Composer. Add interswitch/interswitch-php to your composer.json file. (https://github.com/techquest/interswitch_php)
+* Integrate with PHP. The PHP library is installed via Composer. Add interswitch/interswitch-php to your composer.json file.
 ```
 {
   "require": {
@@ -60,24 +65,21 @@ The PHP library is installed via Composer. Add interswitch/interswitch-php to yo
   }
 }
 ```
-Check out the [PHP source and sample codes on GitHub.]
+Check out the [PHP source and sample codes on GitHub.] (https://github.com/techquest/interswitch_php)
 
 
-* [Ruby] (https://github.com/techquest/interswitch_ruby)
-Available as a gem. 
+* Integrate with Ruby. Available as a gem. 
 ```
  gem install interswitch
 ```
-If you use bundler, you can use this line. 
+If you use bundler, you can use this. 
 ```
 gem 'interswitch', :git => 'https://github.com/techquest/interswitch_ruby'
 ```
 Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
   
 
-* [Java] (https://github.com/techquest/interswitch_java)
-
-Download via Maven. Add the following dependency to your POM. Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
+* Integrate with Java. Download via Maven. Add the following dependency to your POM.
 ```
 <dependency>
   <groupId>com.interswitchng.techquest</groupId>
@@ -85,14 +87,13 @@ Download via Maven. Add the following dependency to your POM. Check out the [Jav
   <version>1.0.0</version>
 </dependency>
 ```
-  
+Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
 
-* [C#] (https://github.com/techquest/interswitch_csharp)
-
-Available as a Nuget package. Download via Nuget. Check out the [C# source and sample codes on GitHub.] (https://github.com/techquest/interswitch_csharp)
+* Integrate with C#. Available as a Nuget package. Download via Nuget. 
 ```
 Install-Package Interswitch
 ```
+Check out the [C# source and sample codes on GitHub.] (https://github.com/techquest/interswitch_csharp)
 
 
 ##How do I use the SDKs?
