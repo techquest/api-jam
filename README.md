@@ -31,13 +31,13 @@ https://developer.interswitchng.com
 Each API call requires authentication. Interswitch uses **_OAuth 2.0_** for APIs.
 
 ##How do I get Access Token?
-Interswitch has provided libraries (SDK) that helps generate Client Access Token. The SDKs generates the Access Token and use it to call the APIs. However, if the API requires a User Access Token, developer are advised to use any OAuth2 library they are familiar with.
+Interswitch has provided libraries (SDK) that helps generate Client Access Token. The SDKs generates the Access Token and use it to call the APIs. However, if the API requires a User Access Token, developer are advised to use any OAuth2 library they are familiar with. Access Token are requested from Interswitch Authorization Server (IAS) called Interswitch Passport
 
-Sandbox authorization server (Interswitch Passport)
+**Sandbox IAS**
 ```
 https://sandbox.interswitchng.com/passport/oauth/authorize?response_type=token&client_id={clientId}&redirect_uri={redirectUri} 
 ```
-Production authorization server
+**Production IAS**
 ```
 https://saturn.interswitchng.com/passport/oauth/authorize?response_type=token&client_id={clientId}&redirect_uri={redirectUri}
 ```
