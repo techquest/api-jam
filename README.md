@@ -51,12 +51,12 @@ A User Access Token is a signed authorization token that grants Developer (Clien
 ```
 Check out the [Javascript source and sample codes on GitHub.] (https://github.com/techquest/interswitch_javascript)
 
-* Integrate with Node npm
+* **Integrate with Node npm**
 ```
 npm install interswitch
 ```
 
-* Integrate with PHP Composer. Add interswitch/interswitch-php to your composer.json file.
+* **Integrate with PHP Composer**. Add interswitch/interswitch-php to your composer.json file.
 ```
 {
   "require": {
@@ -67,7 +67,7 @@ npm install interswitch
 Check out the [PHP source and sample codes on GitHub.] (https://github.com/techquest/interswitch_php)
 
 
-* Integrate with Ruby gem. 
+* **Integrate with Ruby gem** 
 ```
  gem install interswitch
 ```
@@ -78,7 +78,7 @@ gem 'interswitch', :git => 'https://github.com/techquest/interswitch_ruby'
 Check out the [Ruby source and sample codes on GitHub.] (https://github.com/techquest/interswitch_ruby)
   
 
-* Integrate with Java Maven. Add the following dependency to your POM.
+* **Integrate with Java Maven**
 ```
 <dependency>
   <groupId>com.interswitchng.techquest</groupId>
@@ -88,7 +88,7 @@ Check out the [Ruby source and sample codes on GitHub.] (https://github.com/tech
 ```
 Check out the [Java source and sample codes on GitHub.] (https://github.com/techquest/interswitch_java)
 
-* Integrate with C# Nuget. 
+* **Integrate with C# Nuget** 
 ```
 Install-Package Interswitch
 ```
