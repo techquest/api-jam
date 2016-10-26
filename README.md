@@ -30,28 +30,14 @@ https://developer.interswitchng.com
 ##How do I access these APIs?
 Each API call requires authentication. Interswitch uses **_OAuth 2.0_** for APIs.
 
-##How do I create Interswitch Security?
-In order to access Interswitch API, developers will have to send a couple of HTTP headers along with their request. These headers are used for client authentication. See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
+##How do I get Access Token?
+Interswitch has provided libraries (SDK) that helps generate Client Access Token. The SDKs generates the Access Token and use it to call the APIs. However, if the API requires a User Access Token, developer are advised to use any OAuth2 library they are familiar with. Interswitch sandbox authorization server (Interswitch Passport) is https://sandbox.interswitchng.com/passport/oauth/authorize?response_type=token&client_id={clientId}&redirect_uri={redirectUri} and Production authorization server is https://saturn.interswitchng.com/passport/oauth/authorize?response_type=token&client_id={clientId}&redirect_uri={redirectUri}.
 
 ##What is the difference between User Access Token and Client Access Token?
 A User Access Token is a signed authorization token that grants Developer (Client) access to their customer's resources (e.g. Customer's Payment Instruments). The resources are owned by the user but stored by the service provider (Interswitch). Client Access Token on the other hand is a signed authorization token that grants Developer access to service provider's resources (e.g. Payment Gateway, QuickTeller VAS API etc).
 
-##What does User Access Token (Redirect) SDK do?
-Developer calls SDK to get User Access Token. The SDK redirects to **Interswitch Passport** portal where customer signs in with their **QuickTeller** login credentials. The SDK returns an Access Token to the developer. Note that this SDK will redirect your App to a new web page.
-
-##What does Client Access Token SDK do?
-Developer calls SDK to get Client Access Token. SDK makes an API call to **Interswitch Passport** and returns an Access Token to the developer. Note, there is no redirect required. This is the default Access Token used when the Interswitch.send() function is called in the SDK.
-
 ##What SDKs do I need?
-* Access Token SDK
-  * User Access Token (Redirect). ([JavaScript] ())
-  * Client Access Token ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
-* Interswitch API Security Headers SDK
-  * Bearer ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
-  * Interswitch Auth ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
-* Sensitive Payment Data (Payment Card, PIN, CVV, ExpDate) SDK
-  * PinBlock and Secure Data ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
-  * AuthData ([Java] (), [C#] (), [PHP] (), [JavaScript] ())
+The interswitch SDK is available in github and quite a number of programming languages are supported. [Java] (https://github.com/techquest/interswitch_java), [C#] (https://github.com/techquest/interswitch_csharp), [PHP] (https://github.com/techquest/interswitch_php), [JavaScript] (https://github.com/techquest/interswitch_javascript), [Ruby] (https://github.com/techquest/interswitch_ruby)
 
 ##How do I use the SDKs?
 * Initialize
@@ -121,6 +107,14 @@ QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all f
 * Send your request (See **Send Transaction** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
 * Process the response from QuickTeller
 
+
+
+##What does User Access Token (Redirect) SDK do?
+Developer calls SDK to get User Access Token. The SDK redirects to **Interswitch Passport** portal where customer signs in with their **QuickTeller** login credentials. The SDK returns an Access Token to the developer. Note that this SDK will redirect your App to a new web page.
+
+##What does Client Access Token SDK do?
+Developer calls SDK to get Client Access Token. SDK makes an API call to **Interswitch Passport** and returns an Access Token to the developer. Note, there is no redirect required. This is the default Access Token used when the Interswitch.send() function is called in the SDK.
+
 ##How are sensitive data (Payment Instrument e.g Card PAN, Card PIN, CVV, Expiry Date) sent in the API?
 In cases where Customer sensitive data are required to compelte transactons, Interswitch has secure ways to send these data over the wire. Please see **_Ho do I create Interswitch Secure Data_** and **_How do I create Interswitch Auth Data_** for more info.
 
@@ -132,3 +126,6 @@ Some Interswitch API requires sensitive data to be encrypted in a certain way. I
 
 ##How do I create Interswitch Auth Data?
 Some Interswitch API requires sensitive data to be encrypted in a certain way. Interswitch Auth Data SDK will do this for you. See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/authdata). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
+
+##How do I create Interswitch Security?
+In order to access Interswitch API, developers will have to send a couple of HTTP headers along with their request. These headers are used for client authentication. See documentation [here] (https://confluence.interswitch.com/confluence/api/interswitch-services-authentication-specification). See sample code [here] (https://github.com/techquest/java-isw-api-utility-sample).
