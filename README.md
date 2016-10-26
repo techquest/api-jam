@@ -56,9 +56,8 @@ The interswitch SDK is available in github and quite a number of programming lan
 ##How do I use the SDKs?
 * Initialize
   * Interswitch interswitch = new Interswitch(String clientId, String secretkey, Interswitch.ENV_SANDBOX);
-* Send request
-  * HashMap response = interswitch.send(String uri, String httpMethod, String data);
-  * See documentation for URI for each service e.g. api/v1/quickteller/categories
+* Send request. The send function can be used. The send function is overloaded. Additional parameters can be send depending on the requirement of the API. Please see API documentation.
+  * HashMap response = interswitch.send(String uri, String httpMethod, String data). See API documentation for the URI of each service e.g. api/v1/quickteller/categories
 
 ##What is a Payment Instrument?
 A Payment Instrument is used to make a payment e.g. Card Number or Card PAN, Account Number, etc.
