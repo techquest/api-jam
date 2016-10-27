@@ -142,7 +142,7 @@ Paycode API enables customer to generate a one time code and use for payment or 
 * Get Access Token returned by Interswitch Passport. You can use any OAuth client of your choice. 
 * Use Access Token to get Customer's Payment Instrument (Cards)
 * Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
-* Generate Paycode (See **Generate Paycode** documentation [here] (https://confluence.interswitch.com/confluence/api/paycode-api/generate-token)) using the Interswitch libraries in "What SDKs are available?" section of this FAQ
+* Generate Paycode (See **Generate Paycode** documentation [here] (https://confluence.interswitch.com/confluence/api/paycode-api/generate-token/generate-token-request-sent-from-thirdparty)). Use "What SDKs are available?" to access API.
 * Process response
 
 ##How do I use the Loyalty API?
@@ -155,16 +155,21 @@ Payment Gateway enables merchants to accept payment from their customers. See th
 * Decide what VAS service you want to provide to the customer
 * Collect Payment Instrument (Card details) from customer
 * Package your request (See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/request-authentication))
-* Send your request to Interswitch Payment Gateway using the Interswitch libraries in "What SDKs are available?" section of this FAQ
+* Send your request to Interswitch Payment Gateway. Use "What SDKs are available?" to access API.
 * Process the response from Interswitch Payment Gateway
 
 ##How do I use the QuickTeller Bill Payment API?
 QuickTeller API will allow you to Pay for Bills, Transfer Funds to Account all from your Payment Instrument. See steps below:
-* Get Quickteller Bills Category (See **Get Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/getbillercategories)). Use "What SDKs are available?" to access API.
-* Select a category and get all the billers under the category (See **Get Biller by Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/getbillers-by-category)). Use "What SDKs are available?" to access API.
+* Get all Bill categories in QuickTeller.
+* Package your request to get Bill Categories. (See **Get Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/get-biller-categories)).
+* Send your request.  Use "What SDKs are available?" to access API.
+* Select a category and get all the billers under the category 
+* Package your request to get Biller by Category. (See **Get Biller by Category** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/get-billers-by-category))
+* Send your request. Use "What SDKs are available?" to access API.
 * Select the biller, and request for customer details (e.g. if DSTV request for SmartCard Number, if PHCN request for Meter Number)
-* Request for amount the customer will like to pay
-* Validate customer details to ensure they are valid (See **Bill Inquiry** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/bill-payment-inquiry)). Use "What SDKs are available?" to access API.
-* Package your request to QuickTeller
-* Send your request (See **Send Transaction** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction)). Use "What SDKs are available?" to access API.
+* Request for amount the customer will like to pay and do a bill inquiry to validate customer details.
+* Package your request to Bill Inquiry. (See **Bill Inquiry** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/bill-payment-inquiry))
+* Validate customer details to ensure they are valid. Use "What SDKs are available?" to access API.
+* Package your request to Send Transaction. (See **Send Transaction** documentation [here] (https://confluence.interswitch.com/confluence/api/quickteller-service-interface/send-bill-payment-transaction))
+* Send your request. Use "What SDKs are available?" to access API.
 * Process the response from QuickTeller
