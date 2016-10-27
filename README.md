@@ -138,9 +138,13 @@ Typically you will want to use eWallet API to get your custoemr's payment instru
 
 ##How do I use the Paycode API?
 Paycode API enables customer to generate a one time code and use for payment or cash withdrawal at the ATM. See steps below:
-* Request customer to sign in to QuickTeller by reqirecting to Interswitch Authentication Server (Interswitch Passport).
-* Get Access Token returned by Interswitch Passport. You can use any OAuth client of your choice. 
-* Use Access Token to get Customer's Payment Instrument (Cards)
+* Redirect to Interswitch Passport page (OAuth2)
+* Customer will enter Quickteller username & password  on the Passport page.
+* Interswitch Passport redirects to Developer's "redirect_url".
+* Developer gets Access Token returned by Interswitch Passport.
+* Developer uses Access Token to get Customer's Payment Instrument (Cards)
+* Package your (Get Customer's Payment Instrument) request. 
+* Send your request to eWallet API server. Use "What SDKs are available?" to access API.
 * Request customer to enter Payment instrument details (Card Expiry date, CVV, PIN)
 * Generate Paycode (See **Generate Paycode** documentation [here] (https://confluence.interswitch.com/confluence/api/paycode-api/generate-token/generate-token-request-sent-from-thirdparty)). Use "What SDKs are available?" to access API.
 * Process response
@@ -152,9 +156,9 @@ Loyalty API enables customer to know merchant locations where rewards can be ean
 
 ##How do I use the Payment Gateway API?
 Payment Gateway enables merchants to accept payment from their customers. See the steps below:
-* Decide what VAS service you want to provide to the customer
-* Collect Payment Instrument (Card details) from customer
-* Package your request (See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/request-authentication))
+* Decide what VAS service you want to provide to your customer
+* Collect Payment Instrument (Card details) from customer i.e. ask customer for card number, expiry date, cvv, and pin.
+* Package your request. (See documentation [here] (https://confluence.interswitch.com/confluence/api/payment-api-security/request-authentication))
 * Send your request to Interswitch Payment Gateway. Use "What SDKs are available?" to access API.
 * Process the response from Interswitch Payment Gateway
 
