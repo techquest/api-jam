@@ -5,7 +5,7 @@ API Jam Demo Guide readme
 ##How do I get started?
 - Register on Interswitch Developer Console <a href="https://developer.interswitchng.com" target="blank">here</a>
 - Create a new Project App. (Please use REST/SOAP Client). See documentation <a href="https://confluence.interswitch.com/confluence/api/developer-console-guide" target="blank">here</a>
-- Enable services on the App. See documentation <a href="" target="blank">here</a> (https://confluence.interswitch.com/confluence/api/developer-console-guide)
+- Enable services on the App. See documentation <a href="https://confluence.interswitch.com/confluence/api/developer-console-guide" target="blank">here</a>
 - Copy Client ID & Secret Key on Developer Console for re-use during development
 - Read API documentation for how to integrate to each. Please see each API usage in this FAQ.
 - Start Coding
