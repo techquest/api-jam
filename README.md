@@ -3,22 +3,22 @@ API Jam Demo Guide readme
 -------------------------
 
 ##How do I get started?
-- Register on Interswitch Developer Console <a href="https://developer.interswitchng.com" target="blank">here</a>
-- Create a new Project App. (Please use REST/SOAP Client). See documentation <a href="https://confluence.interswitch.com/confluence/api/developer-console-guide" target="blank">here</a>
-- Enable services on the App. See documentation <a href="https://confluence.interswitch.com/confluence/api/developer-console-guide" target="blank">here</a>
+- Register on Interswitch Developer Console <a href="https://developer.interswitchng.com" target="_blank">here</a>
+- Create a new Project App. (Please use REST/SOAP Client). See documentation <a href="https://confluence.interswitch.com/confluence/api/developer-console-guide" target="_blank">here</a>
+- Enable services on the App. See documentation <a href="https://confluence.interswitch.com/confluence/api/developer-console-guide" target="_blank">here</a>
 - Copy Client ID & Secret Key on Developer Console for re-use during development
 - Read API documentation for how to integrate to each. Please see each API usage in this FAQ.
 - Start Coding
 
 ##I want to accept payment with Interswitch Payment Gateway, how do I get started?
-- Register on the Payment Gateway portal: <a href="https://sandbox.interswitchng.com/paymentgateway/" target="blank">Sandbox here </a>, <a href="https://www.interswitchgroup.com/paymentgateway" target="blank">Production here.</a> If you have an existing profile on Developer Console, use the same email address to register.
+- Register on the Payment Gateway portal: <a href="https://sandbox.interswitchng.com/paymentgateway/" target="_blank">Sandbox here </a>, <a href="https://www.interswitchgroup.com/paymentgateway" target="_blank">Production here.</a> If you have an existing profile on Developer Console, use the same email address to register.
 - Click the Developer Console link on the Payment Gateway portal after successful log in
 - Copy Client ID & Secret Key on Developer Console for re-use during development
 - Read API documentation for how to integrate to Payment Gateway below in this FAQ (How do I use the Payment Gateway API?).
 - Start Coding
 
 ##What is the URL of Interswitch Developer Console
-<a href="https://developer.interswitchng.com" target="blank">https://developer.interswitchng.com</a>
+<a href="https://developer.interswitchng.com" target="_blank">https://developer.interswitchng.com</a>
 	
 ##What APIs are available?
 * eWallet
